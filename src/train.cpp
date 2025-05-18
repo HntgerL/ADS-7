@@ -26,10 +26,10 @@ int Train::getLength() {
   }
   int lenght = 0;
   Car* current = first;
-  current->light = true;
+  current -> light = true;
   Car* nextCar = current->next;
   int flag = 0;
-  while (current->light) {
+  while (current -> light) {
     if (flag == 1) {
       nextCar->prev->light = true;
       flag = 0;
